@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold opacity-70 text-gray-900 font-sans;
+  }
+  h2 {
+    @apply text-2xl opacity-70 text-gray-400 max-w-3xl font-sans;
+  }
+  h3 {
+    @apply text-xl opacity-70 text-gray-400 max-w-3xl font-sans;
+  }
+  h4 {
+    @apply text-xl opacity-70 text-black font-semibold max-w-3xl md:text-left font-sans;
+  }
+  h5 {
+    @apply text-xl opacity-70 text-gray-400 max-w-md md:text-left font-sans;
+  }
+  h6 {
+    @apply text-sm opacity-70 text-grayishBlue max-w-md md:max-w-xs font-sans;
+  }
+  ul {
+    @apply flex flex-col space-y-6 md:text-left;
+  }
+  li {
+    @apply text-gray-400 hover:text-strongCyan cursor-pointer list-none;
+  }
+}
+
+.btn-download-ios {
+  @apply bg-strongCyan px-10 py-4 text-xl font-light text-white rounded-full hover:opacity-80 duration-200 outline-none;
+}
+
+.btn-download-mac {
+  @apply bg-lightBlue px-10 py-4 text-lg font-light text-white rounded-full hover:opacity-80 duration-200 outline-none;
+}
+
+body {
+  background-image: url("../images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-image: url("../images//bg-header-mobile.png");
+  }
+}
+
+.ficon:hover {
+  filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
+    brightness(101%) contrast(94%);
+}
