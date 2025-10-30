@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hero {
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@layer base {
+  h1 {
+    @apply md:text-5xl uppercase sm:text-4xl md:max-w-lg;
+  }
+  h3 {
+    @apply absolute bottom-10 text-white text-2xl w-44 pl-10 group-hover:scale-105 duration-200 group-hover:text-black uppercase;
+  }
+}
+
+.item-gradient {
+  @apply absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70;
+}
+
+@media (max-width: 700px) {
+  .li {
+    display: none;
+  }
+  #hero {
+    background-image: url("../images/mobile/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 860px) {
+  #section-2 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 850px) {
+  #show-btn {
+    display: none;
+  }
+}
