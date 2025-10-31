@@ -16,4 +16,4 @@ Run Tailwind CLI
 npm run dev
 ```
 
-![Alt text](images/loopstudios.png)
+![Alt text](design/desktop-design.jpg)
