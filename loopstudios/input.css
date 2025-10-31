@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.hero {
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #hero {
   background-image: url("../images/desktop/image-hero.jpg");
   background-repeat: no-repeat;
@@ -25,7 +31,7 @@
   .li {
     display: none;
   }
-  #hero {
+  .hero {
     background-image: url("../images/mobile/image-hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,4 +49,33 @@
   #show-btn {
     display: none;
   }
+  #haha {
+    display: none;
+  }
+}
+
+/* ----- hamburger ----- */
+.hamburger {
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.5s;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(40deg) translateY(20px) translateX(20px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-40deg) translateY(10px) translateX(-6px);
 }
