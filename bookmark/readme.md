@@ -1,6 +1,6 @@
 # Loopstudios Website
 
-Loopstudios landing page from [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw)
+Loopstudios landing page from [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158)
 
 ## Usage
 
