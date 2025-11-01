@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Bookmark Website</title>
+</head>
+
+<body class="overflow-x-hidden">
+
+  <!-- nav section -->
+  <div class="xl:px-[156px] xl:py-14 lg:px-[20px] lg:py-14 md:px-[10px] md:py-14 sm:px-[28px] sm:py-14 px-6 py-12">
+
+    <!-- nav section -->
+    <section>
+      <div class="flex justify-between items-center max-w-6xl mx-auto">
+        <nav>
+          <img src="./images/logo-bookmark.svg" alt="logo-bookmark.svg">
+        </nav>
+        <nav>
+          <ul class="flex space-x-10">
+            <li><a href="#"
+                class="text-md uppercase text-grayishBlue font-sans font-light tracking-widest hover:text-softRed">Features</a>
+            </li>
+            <li><a href="#"
+                class="text-md uppercase text-grayishBlue font-sans font-light hover:text-softRed">Download</a></li>
+            <li><a href="#" class="text-md uppercase text-grayishBlue font-sans font-light hover:text-softRed">Faq</a>
+            </li>
+            <li><a href="#"
+                class="text-md uppercase font-sans font-light bg-softRed text-white py-[10px] rounded-lg px-8 border-2 border-softRed hover:bg-white hover:text-softRed">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- todo -->
+      <div id="hamburger">
+        <div class="hamburger-top"></div>
+        <div class="hamburger-middle"></div>
+        <div class="hamburger-bottom"></div>
+      </div>
+    </section>
+
+    <!-- hero section mobile view -->
+    <section id="mobile-view" class="max-w-6xl mx-auto mt-10 lg:hidden">
+      <div class="flex flex-col items-center justify-center">
+        <img src="./images/illustration-hero.svg" alt="" class="mx-auto">
+        <div class="flex flex-col items-center justify-center space-y-10">
+          <h1 class="text-center">A Simple Bookmark Manager</h1>
+          <p class="max-w-md text-lg text-grayishBlue text-center">A clean and simple interface to organize your
+            favourite
+            websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+          <div class="flex space-x-4">
+            <button class="btn-blue px-1 py-4 rounded-md hover:bg-white hover:text-softBlue font-bold capitalize">Get it
+              on Chrome</button>
+            <button
+              class="btn-gray px-3 py-4 rounded-md hover:bg-white text-veryDarkBlue hover:text-grayishBlue font-bold capitalize shadow-3xl">Get
+              it on Firefox</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- hero section desktop view -->
+    <section id="hero-desktop-view" class="max-w-6xl mx-auto flex items-center justify-between mt-[110px]">
+      <div class="flex flex-col space-y-4 max-w-md">
+        <h1 class="max-w-sm">A Simple Bookmark Manager</h1>
+        <p>A clean and simple interface to organize your favourite
+          websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+        <div class="flex space-x-4">
+          <button class="btn-blue px-3 py-4 rounded-md hover:bg-white hover:text-softBlue font-bold capitalize">Get it
+            on Chrome</button>
+          <button
+            class="btn-gray px-3 py-4 rounded-md hover:bg-white text-veryDarkBlue hover:text-grayishBlue font-bold capitalize shadow-xl">Get
+            it on Firefox</button>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="./images/illustration-hero.svg" alt="" class="mx-auto w-[460px] z-10">
+        <div class="blue-cylinder-right-rounded absolute -right-[490px] top-[130px] -z-10">
+        </div>
+      </div>
+    </section>
+
+    <!-- features section -->
+    <section class="text-center mt-28">
+      <h1 class="mb-4">Features</h1>
+      <p class="text-center">Our aim is to make it quick and easy for you to access your favourite websites. Your
+        bookmarks sync between
+        your devices so you can access them on the go.</p>
+    </section>
+
+    <!-- feature heading section -->
+    <section class="flex flex-col items-center justify-center md:flex-row">
+      <div class="max-w-6xl">
+        <div class="flex flex-col space-y-6 mt-16 md:flex-row md:space-y-0 md:space-x-6">
+          <div class="feature-heading">
+            <div class="flex flex-col items-center justify-center">
+              <div class="inline-block cursor-pointer">
+                <div class="opacity-70 text-md mb-4 hover:text-softRed">Simple Bookmarking</div>
+                <div class="orange-active-line active"></div>
+              </div>
+              <div class="gray-line md:hidden"></div>
+            </div>
+          </div>
+
+          <div class="feature-heading">
+            <div class="flex flex-col items-center justify-center">
+              <div class="inline-block cursor-pointer">
+                <div class="opacity-70 text-md mb-4 hover:text-softRed">Speedy Searching</div>
+                <div class="orange-active-line"></div>
+              </div>
+              <div class="gray-line md:hidden"></div>
+            </div>
+          </div>
+
+          <div class="feature-heading">
+            <div class="flex flex-col items-center justify-center">
+              <div class="inline-block cursor-pointer">
+                <div class="opacity-70 text-md mb-4 hover:text-softRed">Easy Sharing</div>
+                <div class="orange-active-line"></div>
+              </div>
+              <div class="gray-line md:hidden"></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="gray-line"></div>
+      </div>
+    </section>
+
+    <!-- dynamic feature content section -->
+    <section id="activate-content-features" class="max-w-6xl mt-12 mx-auto">
+      <div
+        class="flex flex-col items-center md:items-start justify-between space-y-[130px] md:flex-row md:space-y-0 md:space-x-10">
+        <div class="max-w-lg relative">
+          <img src="./images/illustration-features-tab-1.svg" alt="illustration-features-tab-1.svg" class="z[10]">
+          <div class="lg:blue-cylinder-left-rounded absolute rounded-r-full -left-[490px] top-[180px] -z-[10]"></div>
+        </div>
+        <div class="flex flex-col space-y-8">
+          <h2 class="text-center md:text-left">Bookmark in one click</h2>
+          <p class="text-center md:text-left max-w-sm">Organize your bookmarks however you like. Our simple
+            drag-and-drop
+            interface gives
+            you
+            complete control
+            over how you manage your favourite sites.</p>
+          <button
+            class="capitalize btn-blue px-6 py-2 border-2 border-softBlue rounded-md hover:bg-white hover:text-softBlue font-semibold">More
+            info</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download the extension section -->
+    <section class="mt-40 max-w-lg mx-auto flex flex-col items-center justify-center space-y-6">
+      <h1>Download the extension</h1>
+      <p class="text-center">We've got more browsers in the pipeline. Please do let us know if you've got a favourite
+        you'd like us to prioritize.</p>
+    </section>
+
+    <!-- Add & Install Extension section -->
+    <section
+      class="flex flex-col justify-center space-y-10 md:flex-row lg:space-y-4 md:space-x-5 lg:space-x-12 mt-[100px]">
+
+      <div class="bg-white shadow-lg inline-block rounded-lg h-1/2">
+        <div class="flex flex-col items-center lg:py-6 lg:px-10 justify-center">
+          <div class="flex flex-col space-y-4">
+            <img src="./images/logo-chrome.svg" alt="logo-chrome.svg" class="mx-auto">
+            <h3>Add to Chrome</h3>
+            <p>Minimum Version 62</p>
+          </div>
+        </div>
+        <div class="dot-line underline decoration-dotted decoration-softBlue underline-offset-4"></div>
+        <div class="py-6 px-6">
+          <button
+            class="btn-blue py-3 px-4 lg:px-7 rounded-md hover:bg-white hover:text-softBlue capitalize text-md w-full">Add
+            &
+            Install
+            Extension</button>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg inline-block rounded-lg h-1/2">
+        <div class="flex flex-col items-center lg:py-6 lg:px-10 justify-center">
+          <div class="flex flex-col space-y-4">
+            <img src="./images/logo-firefox.svg" alt="logo-chrome.svg" class="mx-auto">
+            <h3>Add to Firefox</h3>
+            <p>Minimum Version 55</p>
+          </div>
+        </div>
+        <div class="dot-line underline decoration-dotted decoration-softBlue underline-offset-4"></div>
+        <div class="py-6 px-6">
+          <button
+            class="btn-blue py-3 px-4 lg:px-7 rounded-md hover:bg-white hover:text-softBlue capitalize text-md w-full">Add
+            &
+            Install
+            Extension</button>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg inline-block rounded-lg">
+        <div class="flex flex-col items-center lg:py-6 lg:px-10 justify-center">
+          <div class="flex flex-col space-y-4">
+            <img src="./images/logo-opera.svg" alt="logo-chrome.svg" class="mx-auto">
+            <h3>Add to Opera</h3>
+            <p>Minimum Version 46</p>
+          </div>
+        </div>
+        <div class="dot-line underline decoration-dotted decoration-softBlue underline-offset-4"></div>
+        <div class="py-6 px-6">
+          <button
+            class="btn-blue py-3 px-4 lg:px-7 rounded-md hover:bg-white hover:text-softBlue capitalize text-md w-full">Add
+            &
+            Install
+            Extension</button>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- FAQ section -->
+    <section class="flex flex-col items-center justify-center mt-[100px] space-y-10">
+      <div class="flex flex-col space-y-6">
+        <h1 class="text-center opacity-80">Frequently Asked Questions</h1>
+        <p class="text-center text-black max-w-md">Here are some of our FAQs. If you have any other questions you'd like
+          answered please feel free to email us.</p>
+      </div>
+
+      <!-- Faq question answer section -->
+      <div id="accrodian" class="w-[513px]">
+      </div>
+
+    </section>
+  </div>
+
+  <!-- email section -->
+  <section class="bg-softBlue text-white flex flex-col items-center justify-center space-y-8 py-[100px]">
+    <div>
+      <h4 class="text-center mb-6 text-lg tracking-wider uppercase">35,000+ Already Joined</h4>
+      <h1 class="max-w-xl text-center">Stay up-to-date with what we're doing</h1>
+    </div>
+    <form action="#" class="flex flex-col items-center space-y-4 md:flex-row md:space-y-0">
+      <input type="text" name="email" id="email" placeholder="Enter your email Address"
+        class="px-6 py-3 rounded-lg mr-2 text-black">
+      <button type="submit" class="bg-softRed py-[10px] text-lg px-5 rounded-md hover:opacity-80 duration-300">Contact
+        Us</button>
+    </form>
+  </section>
+
+  <!-- footer section -->
+  <section class="text-white bg-veryDarkBlue">
+    <div
+      class="max-w-6xl flex flex-col items-center  mx-auto space-y-12 md:flex-row md:space-y-0 md:justify-between xl:px-[156px] xl:py-14 lg:px-[20px] lg:py-14 md:px-[10px] md:py-14 sm:px-[28px] sm:py-14 px-6 py-12">
+      <div class="flex flex-col space-y-8 md:space-y-0 md:space-x-12 md:flex-row">
+        <img src="./images/logo-bookmark-footer.svg" alt="logo-bookmark-footer">
+        <ul
+          class="flex flex-col items-center justify-center space-y-8 text-grayishBlue md:flex-row md:space-y-0 md:space-x-[40px]">
+          <li><a href="#" class="uppercase hover:text-softRed text-lg">Features</a></li>
+          <li><a href="#" class="uppercase hover:text-softRed text-lg">Download</a></li>
+          <li><a href="#" class="uppercase hover:text-softRed text-lg">Faq</a></li>
+        </ul>
+      </div>
+      <div class="flex space-x-10">
+        <img src="./images/icon-facebook.svg" alt="icon-facebook">
+        <img src="./images/icon-twitter.svg" alt="icon-twitter">
+      </div>
+    </div>
+
+  </section>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

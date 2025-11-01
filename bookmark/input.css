@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-blue {
+    @apply bg-softBlue text-white border-2 border-softBlue;
+  }
+  .btn-gray {
+    @apply bg-gray-400 text-white border-2 border-grayishBlue;
+  }
+  .blue-cylinder-right-rounded {
+    @apply h-60 w-[800px] bg-softBlue rounded-l-full;
+  }
+  .blue-cylinder-left-rounded {
+    @apply h-60 w-[800px] bg-softBlue rounded-r-full;
+  }
+  .orange-active-line.active {
+    @apply h-1 bg-softRed;
+  }
+  .gray-line {
+    @apply h-[1px] bg-grayishBlue opacity-30;
+  }
+  .dot-line {
+    @apply border-b-4 border-dotted border-grayishBlue opacity-30;
+  }
+  .hoverText {
+    @apply hover:text-softRed;
+  }
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl font-semibold tracking-wide;
+  }
+  h2 {
+    @apply text-3xl font-semibold tracking-wide;
+  }
+  h3 {
+    @apply text-xl font-bold tracking-wide;
+  }
+  p {
+    @apply max-w-lg text-base text-grayishBlue text-left mx-auto;
+  }
+}
+
+
+/* todo */
+#hamburger {
+  cursor: pointer;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  height: 3px;
+  width: 30px;
+  background-color: black;
+  margin-top: 4px;
+}
+
+@media (max-width: 1020px) {
+  #hero-desktop-view {
+    display: none;
+  }
+}
