@@ -17,19 +17,21 @@
   <div class="xl:px-[156px] xl:py-14 lg:px-[20px] lg:py-14 md:px-[10px] md:py-14 sm:px-[28px] sm:py-14 px-6 py-12">
 
     <!-- nav section -->
-    <section>
-      <div class="flex justify-between items-center max-w-6xl mx-auto">
+    <section class="relative">
+      <div class="flex justify-between items-center max-w-6xl mx-auto hide-nav-content">
         <nav>
           <img src="./images/logo-bookmark.svg" alt="logo-bookmark.svg">
         </nav>
-        <nav>
+        <nav class="hide-nav-content">
           <ul class="flex space-x-10">
-            <li><a href="#"
-                class="text-md uppercase text-grayishBlue font-sans font-light tracking-widest hover:text-softRed">Features</a>
+            <li><a href="#features"
+                class="text-md uppercase text-grayishBlue font-sans font-light tracking-widest hover:text-softRed nav-link">Features</a>
             </li>
-            <li><a href="#"
-                class="text-md uppercase text-grayishBlue font-sans font-light hover:text-softRed">Download</a></li>
-            <li><a href="#" class="text-md uppercase text-grayishBlue font-sans font-light hover:text-softRed">Faq</a>
+            <li><a href="#download"
+                class="text-md uppercase text-grayishBlue font-sans font-light hover:text-softRed nav-link">Download</a>
+            </li>
+            <li><a href="#faq"
+                class="text-md uppercase text-grayishBlue font-sans font-light hover:text-softRed nav-link">Faq</a>
             </li>
             <li><a href="#"
                 class="text-md uppercase font-sans font-light bg-softRed text-white py-[10px] rounded-lg px-8 border-2 border-softRed hover:bg-white hover:text-softRed">Login</a>
@@ -38,11 +40,32 @@
         </nav>
       </div>
 
-      <!-- todo -->
-      <div id="hamburger">
-        <div class="hamburger-top"></div>
-        <div class="hamburger-middle"></div>
-        <div class="hamburger-bottom"></div>
+      <!-- hamburger menu section -->
+      <div id="hamburger" class="md:hidden block">
+        <nav class="inline-block z-30 text-white" id="logoImgDynamic">
+          <img src="./images/logo-bookmark.svg" alt="logo-bookmark.svg">
+        </nav>
+        <div id="open" class="z-30 right-10">
+          <div class="hamburger-top"></div>
+          <div class="hamburger-middle"></div>
+          <div class="hamburger-bottom"></div>
+        </div>
+      </div>
+
+      <!-- mobile view -->
+      <div id="hamburger-content-open"
+        class="bg-veryDarkBlue opacity-90 fixed top-0 left-0 w-full h-screen hidden z-10">
+        <div class="pt-[110px]">
+          <ul class="flex flex-col items-center justify-center  space-y-4 text-white text-xl tracking-wider px-8">
+            <li><a href="#features" class="hoverText nav-link">Features</a></li>
+            <div class="gray-line"></div>
+            <li><a href="#download" class="hoverText nav-link">Download</a></li>
+            <div class="gray-line"></div>
+            <li><a href="#faq" class="hoverText nav-link">Faq</a></li>
+            <div class="gray-line"></div>
+            <li><a href="#" class="hoverText">Login</a></li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -76,7 +99,7 @@
           <button class="btn-blue px-3 py-4 rounded-md hover:bg-white hover:text-softBlue font-bold capitalize">Get it
             on Chrome</button>
           <button
-            class="btn-gray px-3 py-4 rounded-md hover:bg-white text-veryDarkBlue hover:text-grayishBlue font-bold capitalize shadow-xl">Get
+            class="btn-gray md:px-3 py-2 rounded-md hover:bg-white text-veryDarkBlue hover:text-grayishBlue font-bold capitalize shadow-xl text-sm px-1">Get
             it on Firefox</button>
         </div>
       </div>
@@ -88,7 +111,7 @@
     </section>
 
     <!-- features section -->
-    <section class="text-center mt-28">
+    <section class="text-center mt-28" id="features">
       <h1 class="mb-4">Features</h1>
       <p class="text-center">Our aim is to make it quick and easy for you to access your favourite websites. Your
         bookmarks sync between
@@ -102,7 +125,7 @@
           <div class="feature-heading">
             <div class="flex flex-col items-center justify-center">
               <div class="inline-block cursor-pointer">
-                <div class="opacity-70 text-md mb-4 hover:text-softRed">Simple Bookmarking</div>
+                <div class="opacity-70 text-md mb-4 hover:text-softRed text-center">Simple Bookmarking</div>
                 <div class="orange-active-line active"></div>
               </div>
               <div class="gray-line md:hidden"></div>
@@ -110,9 +133,9 @@
           </div>
 
           <div class="feature-heading">
-            <div class="flex flex-col items-center justify-center">
+            <div class="flex flex-col justify-center">
               <div class="inline-block cursor-pointer">
-                <div class="opacity-70 text-md mb-4 hover:text-softRed">Speedy Searching</div>
+                <div class="opacity-70 text-md mb-4 hover:text-softRed text-center">Speedy Searching</div>
                 <div class="orange-active-line"></div>
               </div>
               <div class="gray-line md:hidden"></div>
@@ -120,21 +143,21 @@
           </div>
 
           <div class="feature-heading">
-            <div class="flex flex-col items-center justify-center">
+            <div class="flex flex-col justify-center">
               <div class="inline-block cursor-pointer">
-                <div class="opacity-70 text-md mb-4 hover:text-softRed">Easy Sharing</div>
+                <div class="opacity-70 text-md mb-4 hover:text-softRed text-center">Easy Sharing</div>
                 <div class="orange-active-line"></div>
               </div>
               <div class="gray-line md:hidden"></div>
             </div>
           </div>
         </div>
-        <div class="gray-line"></div>
+        <div class="gray-line all-line-in-one"></div>
       </div>
     </section>
 
     <!-- dynamic feature content section -->
-    <section id="activate-content-features" class="max-w-6xl mt-12 mx-auto">
+    <section id="activateContentFeatures" class="max-w-6xl mt-12 mx-auto">
       <div
         class="flex flex-col items-center md:items-start justify-between space-y-[130px] md:flex-row md:space-y-0 md:space-x-10">
         <div class="max-w-lg relative">
@@ -150,15 +173,15 @@
             complete control
             over how you manage your favourite sites.</p>
           <button
-            class="capitalize btn-blue px-6 py-2 border-2 border-softBlue rounded-md hover:bg-white hover:text-softBlue font-semibold">More
+            class="capitalize btn-blue px-8 py-2 border-2 border-softBlue rounded-md hover:bg-white hover:text-softBlue font-semibold ">More
             info</button>
         </div>
       </div>
     </section>
 
     <!-- Download the extension section -->
-    <section class="mt-40 max-w-lg mx-auto flex flex-col items-center justify-center space-y-6">
-      <h1>Download the extension</h1>
+    <section class="mt-40 max-w-lg mx-auto flex flex-col items-center justify-center space-y-6" id="download">
+      <h1 class="text-center">Download the extension</h1>
       <p class="text-center">We've got more browsers in the pipeline. Please do let us know if you've got a favourite
         you'd like us to prioritize.</p>
     </section>
@@ -222,7 +245,7 @@
     </section>
 
     <!-- FAQ section -->
-    <section class="flex flex-col items-center justify-center mt-[100px] space-y-10">
+    <section class="flex flex-col items-center justify-center mt-[100px] space-y-10" id="faq">
       <div class="flex flex-col space-y-6">
         <h1 class="text-center opacity-80">Frequently Asked Questions</h1>
         <p class="text-center text-black max-w-md">Here are some of our FAQs. If you have any other questions you'd like
@@ -230,14 +253,15 @@
       </div>
 
       <!-- Faq question answer section -->
-      <div id="accrodian" class="w-[513px]">
+      <div id="accrodian" class="md:w-[513px]">
+
       </div>
 
     </section>
   </div>
 
   <!-- email section -->
-  <section class="bg-softBlue text-white flex flex-col items-center justify-center space-y-8 py-[100px]">
+  <section class="bg-softBlue text-white flex flex-col items-center justify-center space-y-8 py-[100px] w-full">
     <div>
       <h4 class="text-center mb-6 text-lg tracking-wider uppercase">35,000+ Already Joined</h4>
       <h1 class="max-w-xl text-center">Stay up-to-date with what we're doing</h1>
@@ -258,9 +282,9 @@
         <img src="./images/logo-bookmark-footer.svg" alt="logo-bookmark-footer">
         <ul
           class="flex flex-col items-center justify-center space-y-8 text-grayishBlue md:flex-row md:space-y-0 md:space-x-[40px]">
-          <li><a href="#" class="uppercase hover:text-softRed text-lg">Features</a></li>
-          <li><a href="#" class="uppercase hover:text-softRed text-lg">Download</a></li>
-          <li><a href="#" class="uppercase hover:text-softRed text-lg">Faq</a></li>
+          <li><a href="#features" class="uppercase hover:text-softRed text-lg nav-link">Features</a></li>
+          <li><a href="#download" class="uppercase hover:text-softRed text-lg nav-link">Download</a></li>
+          <li><a href="#faq" class="uppercase hover:text-softRed text-lg nav-link">Faq</a></li>
         </ul>
       </div>
       <div class="flex space-x-10">
