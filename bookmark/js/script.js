@@ -92,9 +92,11 @@ accrodianContent.forEach((faq, i) => {
 
     faqItem.innerHTML = `
         <div class="flex flex-col">
-            <div class="flex justify-between items-center">
-                <div class="faq-question font-semibold cursor-pointer mr-1 hover:text-softRed text-sm">${faq.question}</div>
-                <img src=${faq.img} alt="" class="arrow transition-transform duration-300">
+            <div class="">
+                <div class="faq-question flex justify-between items-center font-semibold cursor-pointer mr-1 hover:text-softRed text-sm">
+                    <a>${faq.question}</a>
+                    <img src=${faq.img} alt="" class="arrow transition-transform duration-300">
+                </div>
             </div>
             <p class="faq-answer hidden text-gray-500">${faq.answer}</p>
         </div>
